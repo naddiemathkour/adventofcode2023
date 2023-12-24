@@ -22,7 +22,6 @@ for (let i = 0; i < input.length - 1; i++){
   else total_points += 2 ** (card_points - 1);
 }
 
-let multiplier = [0];
 let card_map = new Map();
 
 for (let i = 0; i < input.length - 1; i++){
@@ -53,6 +52,7 @@ for (let i = 0; i < input.length - 1; i++){
     }
   }
 }
+
 let total = 0;
 for (let i = 0; i < input.length - 1; i++){
   total += card_map.get(i);
